@@ -1,6 +1,16 @@
 # Slate Documenation Builder Action
 GitHub action to build repositories Markdown files using the [slate framework](https://github.com/lord/slate)
 
+**Table of Contents**
+
+- [Slate Documenation Builder Action](#slate-documenation-builder-action)
+  - [Getting Started](#getting-started)
+  - [Using as GitHub Action](#using-as-github-action)
+    - [Settings for v2.0.0+ release](#settings-for-v200-release)
+      - [Advanced configuration](#advanced-configuration)
+        - [Get the Result](#get-the-result)
+  - [Complete Workflow Example](#complete-workflow-example)
+
 ## Getting Started
 The docker image can be used to locally build your markdown files. For this you need, first of all, to build the docker image:
 
@@ -14,28 +24,9 @@ Once built run the container using the following command:
 docker run -it --rm -v <md files folder>:/usr/src/doc decathlon/slate-builder
 ```
 
-The slate build result will be store in the build subdir of `<md files folder>`.
+The slate build result will be stored into the build subdir of `<md files folder>`.
 
 ## Using as GitHub Action
-
-### Settings for v1.0.0+ release (deprecated)
-
-To automate the documentation build for your GitHub projects, this builder is also released as [GitHub Action](https://github.com/features/actions).
-All you have to do is to create a `main.workflow` in your repository, linking this actions.
-
-```
-workflow "Create Slate Documentation On Push" {
-  on = "push"
-  resolves = ["Build Documentation"]
-}
-
-action "Build Documentation" {
-  uses = "decathlon/slate-builder-action@master"
-  env = {
-     DOC_BASE_FOLDER = "."
-  }
-}
-```
 
 ### Settings for v2.0.0+ release
 
