@@ -34,7 +34,7 @@ action "Build Documentation" {
 }
 ```
 
-The `DOC_BASE_FOLDER` environement variable is the path, in your github repository, containing the Markdown files you want to build as Slate website.
+The `DOC_BASE_FOLDER` environement variable is the path, in your GitHub repository, containing the Markdown files you want to build as Slate website.
 
 ### Advanced configuration
 You can override the default Slate template, providing a repository containing your custom slate template.
