@@ -1,4 +1,4 @@
-FROM ruby:2.3-alpine
+FROM ruby:2.7-alpine
 LABEL maintainer="developers@decathlon.com"
 LABEL "com.github.actions.name"="Slate Documentation builder"
 LABEL "com.github.actions.description"="Build repository md files using the slate framework"
