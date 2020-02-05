@@ -4,7 +4,7 @@ jobs:
   action-filter:
     runs-on: ubuntu-18.04
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v2
     - name: Build documentation
       uses: ./
       env:
