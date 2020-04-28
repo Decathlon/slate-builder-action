@@ -1,10 +1,9 @@
 name: Slate documentation builder
 author: Decathlon <developers@decathlon.com>
-description: This Github action <strong>builds repositories Markdown files</strong> using slate framework.
-The slate build result will be stored into the build subdirectory of <md files folder>.
+description: This Github action <strong>builds repositories Markdown files</strong> using slate framework. The slate build result will be stored into the build subdirectory of <md files folder>.
 runs:
   using: 'docker'
-  image: 'docker://decathlon/slate-builder-action:2.0.0'
+  image: 'Dockerfile'
 branding:
   icon: tag
   color: blue
